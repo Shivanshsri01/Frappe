@@ -1,3 +1,5 @@
+from __future__ import unicode_literals
+
 app_name = "my_custom_app"
 app_title = "My Custom App"
 app_publisher = "Shivansh"
@@ -12,6 +14,7 @@ app_license = "mit"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/my_custom_app/css/my_custom_app.css"
 # app_include_js = "/assets/my_custom_app/js/my_custom_app.js"
+
 
 # include js, css files in header of web template
 # web_include_css = "/assets/my_custom_app/css/my_custom_app.css"
@@ -227,3 +230,7 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+# Add script report
+override_doctype_class = {
+	"Item Price": "my_custom_app.my_custom_app.Override.itemPrice.itemPrice"
+}
